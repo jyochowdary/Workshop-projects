@@ -1,0 +1,240 @@
+include downalod button in this code <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kakarla Nagajyoshna | Modern Dashboard</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3a8a,#0f172a,#9333ea);
+    display:flex;
+    min-height:100vh;
+    color:white;
+}
+
+.sidebar{
+    width:260px;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.08);
+    padding:30px 20px;
+    position:fixed;
+    height:100%;
+    border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-weight:600;
+}
+
+.sidebar a{
+    display:block;
+    padding:12px;
+    margin:12px 0;
+    text-decoration:none;
+    color:white;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,0.2);
+    transform:translateX(5px);
+}
+
+.main{
+    margin-left:260px;
+    padding:50px;
+    width:100%;
+}
+
+.header{
+    margin-bottom:40px;
+}
+
+.header h1{
+    font-size:38px;
+    font-weight:600;
+}
+
+.header span{
+    color:#facc15;
+}
+
+.header p{
+    margin-top:10px;
+    opacity:0.8;
+}
+
+.section{
+    margin-bottom:50px;
+}
+
+.section h2{
+    margin-bottom:20px;
+    border-left:4px solid #facc15;
+    padding-left:10px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(20px);
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:20px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.skill{
+    margin-bottom:15px;
+}
+
+.skill-name{
+    margin-bottom:6px;
+}
+
+.bar{
+    height:8px;
+    background:rgba(255,255,255,0.2);
+    border-radius:10px;
+}
+
+.progress{
+    height:8px;
+    background:#facc15;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    margin-top:50px;
+    opacity:0.7;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>Portfolio</h2>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <h1>Hello, I'm <span>Nagajyoshna</span></h1>
+        <p>B.Tech Artificial Intelligence & Data Science (3rd Year)</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <div class="card">
+            Passionate Artificial Intelligence & Data Science student eager to learn emerging technologies 
+            and contribute effectively to innovative projects while continuously enhancing my skills.
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>B.Tech – Artificial Intelligence & Data Science</h3>
+                <p>Annamacharya Institution of Technology and Sciences, Tirupati</p>
+                <p>2023 – Present</p>
+            </div>
+            <div class="card">
+                <h3>Intermediate (MPC)</h3>
+                <p>The Nandyal Junior College, Nandyal</p>
+                <p>2021 – 2023</p>
+            </div>
+            <div class="card">
+                <h3>SSC</h3>
+                <p>ZPHS, Harivaram</p>
+                <p>2020 – 2021</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="card">
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="bar"><div class="progress" style="width:80%"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Core Java</div>
+                <div class="bar"><div class="progress" style="width:70%"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Machine Learning</div>
+                <div class="bar"><div class="progress" style="width:75%"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">HTML & CSS</div>
+                <div class="bar"><div class="progress" style="width:85%"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Library Management System</h3>
+            Developed using JavaFX and Oracle SQL Database including Admin Panel, 
+            User Panel, Book Management and Billing System.
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="card">
+            Email: yourmail@gmail.com <br>
+            Phone: 9XXXXXXXXX
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Kakarla Nagajyoshna | Modern Dashboard
+    </footer>
+
+</div>
+
+</body>
+</html>
